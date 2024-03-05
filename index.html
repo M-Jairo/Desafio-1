@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Desafio 1</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <img src="img/Frame 6.png" id="logo" class="logo">
+
+                <div class="izq">
+                    <textarea id="texto_encriptar" placeholder="Ingrese texto"></textarea>
+
+                    <br><br>
+                    
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" id="svg-text" width="300" height="16" fill="rgba(73, 80, 87, 1)" class="bi-exclamation-circle-fill" viewBox="140 0 16 17">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                        
+                        <text x="18" y="14" class="solo-min" >Solo letras minúsculas y sin acentos</text>
+                    </svg>
+
+                    <div class="botones">
+                        <button id="encriptar" onclick="encriptar('texto_encriptar');">Enctiptar</button>
+                        <button onclick="desencriptar('texto_encriptar');">Desenctiptar</button>
+                    </div>
+                    
+                </div>
+               
+
+                <div class="der" id="mostrar">
+                    <img src="img/Muñeco.png" id="imagen" class="imagen">
+                    <h1 id="mensaje_no_encontrado">Ningún mensaje fue encontrado</h1>
+
+                    <textarea id="texto_encriptado"></textarea>
+
+                    <button onclick="copiar('texto_encriptado');" id="boton_copiar">Copiar</button>
+                </div>
+
+        </div>
+        
+    <script src="app.js" defer></script>
+    </body>
+</html>
